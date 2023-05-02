@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes,Route } from 'react-router-dom';
+import Nav from './Components/Navbar/Nav';
+import Home from './Components/Home/Home';
+import Searchpage from './Components/searchPage/Searchpage';
+import Profiledetails from './Components/ProfileDetails/Profiledetails';
+import Login from './Components/Login/Login';
+import { useState } from 'react';
+import Profile from './Components/Myprofile/Profile';
 
 function App() {
+
+  const [loggedin, setloggedin] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Nav/> */}
+     {loggedin ? <><Nav setloggedin={setloggedin}/></> : null}
+     <Routes>
+      <Route path='/' element={loggedin ? <Home/> : <Login setloggedin={setloggedin}/>}/>
+      <Route path='/home' element={<Home/>}/>
+      <Route path='/profiledetails/:id' element={<Profiledetails/>}/>
+      <Route path='/searchpage' element={<Searchpage/>}/>
+      <Route path='/myprofile' element={<Profile/>}/>
+     </Routes>
     </div>
   );
 }

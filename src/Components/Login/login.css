@@ -1,0 +1,70 @@
+
+
+.LoginPage{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3cc3bd;
+}
+
+.loginContainerDiv{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    display: flex;
+}
+
+
+.imgDivCont{
+    width: 60%;
+    /* border: 3px solid yellow; */
+}
+
+.imgDivCont img {
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.inpuDivCont{
+    width: 40%;
+    /* border: 3px solid red; */
+    background-color: white;
+    color: #3cc3bd;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 50px 100px;
+
+}
+
+.inpuDivCont input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.inpuDivCont button{
+    height: 40px;
+    width: 210px;
+    background-color:  #3cc3bd;
+    border: none;
+    border-radius: 32px;
+}
+
+
+
+.Footerdiv{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -1,0 +1,54 @@
+
+.myprofileContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myProfileContainer{
+    height: 350px;
+    width: 800px;
+    border: 1px solid white;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.myleftContainer{
+    width: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+
+.myleftContainer img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+.myrightContainer{
+    width: 60%;
+    /* border: 2px solid blue; */
+    padding: 10px  20px;
+}
+
+.myinnerrightContainer{
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+}
+
+.myinnerrightContainer button {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(15,17,21);
+    border: 1px solid white;
+    border-radius: 8px;
+
+}

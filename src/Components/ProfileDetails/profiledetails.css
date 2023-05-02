@@ -1,0 +1,92 @@
+
+
+.profileDetails{
+    /* height: 90%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProfileContainer{
+    height: 300px;
+    width: 800px;
+    border: 1px solid white;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.leftContainer{
+    width: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.leftContainer img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+.rightContainer{
+    width: 60%;
+    /* border: 2px solid blue; */
+    padding: 10px  20px;
+}
+
+.innerrightContainer{
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+}
+
+.innerrightContainer button {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(15,17,21);
+    border: 1px solid white;
+    border-radius: 8px;
+
+}
+.repoContainer{
+    height: 100px;
+    width: 800px;
+    /* border: 2px solid red; */
+    /* gap: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.repo{
+    height: 150px;
+    width: 800px;
+    border: 2px solid white;
+    border-radius: 16px;
+    display: flex;
+    padding: 10px 20px ;
+    
+}
+
+
+.buttonDivFinal{
+    height: 100%;
+    width: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border: 2px solid white; */
+    gap: 30px;
+}
+
+.buttonDivFinal button{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(15,17,21);
+    border: 1px solid white;
+    border-radius: 8px;
+}
