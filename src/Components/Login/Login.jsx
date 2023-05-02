@@ -34,7 +34,7 @@ const Login = ({setloggedin}) => {
             ) {
               setloggedin(true);
             } else {
-              alert("Enter proper credentials");
+              alert("Enter proper credentials username => admin & password => admin@123");
             }
           }}>Login</button>
 
