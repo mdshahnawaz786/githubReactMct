@@ -10,7 +10,7 @@ import Profile from './Components/Myprofile/Profile';
 
 function App() {
 
-  const [loggedin, setloggedin] = useState(false)
+  const [loggedin, setloggedin] = useState(true)
 
   return (
     <div className="App">

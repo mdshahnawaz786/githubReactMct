@@ -30,6 +30,15 @@ const Searchpage = () => {
           })
     }
 
+    const apiFetching2 = async () => {
+      var res = await fetch(`https://api.github.com/users/${input}/repos`);
+      var data = await res.json();
+      console.log(data,"UserData");
+      dispatch({
+        type:'userRepo',
+        payload:data
+      })
+    };
 
   return (
     <div className='searchPage'>
@@ -46,9 +55,10 @@ const Searchpage = () => {
             setInput(e.target.value)
         }} type="text" />
 
-<Link to={`/profiledetails/${data.id}`}>
+<Link to={`/profiledetails`}>
 <button onClick={() => {
         apiFetching()
+        apiFetching2()
         console.log(data);
 
 }}>SEARCH</button></Link>
