@@ -9,6 +9,7 @@
       width: 100vw;
       background-color: rgb(15,17,21);
       color: white;
+      overflow-x: hidden;
   }
   
   #root{
