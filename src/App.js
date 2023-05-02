@@ -19,7 +19,7 @@ function App() {
      <Routes>
       <Route path='/' element={loggedin ? <Home/> : <Login setloggedin={setloggedin}/>}/>
       <Route path='/home' element={<Home/>}/>
-      <Route path='/profiledetails/:id' element={<Profiledetails/>}/>
+      <Route path='/profiledetails' element={<Profiledetails/>}/>
       <Route path='/searchpage' element={<Searchpage/>}/>
       <Route path='/myprofile' element={<Profile/>}/>
      </Routes>

@@ -74,7 +74,7 @@ const Home = () => {
         <>
           {user.map((ele) => {
             return (
-              <Link to={`/profiledetails/${ele.id}`}>
+              <Link to={`/profiledetails`}>
               <div className="gridContainer" onClick={()=>{
                 apiFetching1(ele.login)
                 apiFetching2(ele.login)
@@ -82,7 +82,7 @@ const Home = () => {
                 
               }}>
                 <div className="imgContainer">
-                  <Link to={`/profiledetails/${ele.id}`}>
+                  <Link to={`/profiledetails`}>
                   <img onClick={()=>{
                     apiFetching1(ele.login)
                     apiFetching2(ele.login)
