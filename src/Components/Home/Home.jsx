@@ -74,7 +74,13 @@ const Home = () => {
         <>
           {user.map((ele) => {
             return (
-              <div className="gridContainer">
+              <Link to={`/profiledetails/${ele.id}`}>
+              <div className="gridContainer" onClick={()=>{
+                apiFetching1(ele.login)
+                apiFetching2(ele.login)
+                apiFetching3(ele.languages_url)
+                
+              }}>
                 <div className="imgContainer">
                   <Link to={`/profiledetails/${ele.id}`}>
                   <img onClick={()=>{
@@ -108,6 +114,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             );
           })}
         </>
